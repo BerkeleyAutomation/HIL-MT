@@ -8,7 +8,7 @@ import time
 import numpy as np
 
 import agents
-from skillhub import client
+from hilmt import client
 from utils import DictTree
 
 

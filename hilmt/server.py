@@ -22,9 +22,9 @@ DEBUG = False
 # logging.basicConfig()
 # logging.getLogger('sqlalchemy.engine').setLevel(logging.INFO)
 
-app_name = 'SkillHub'
+app_name = 'HIL-MT'
 app = flask.Flask(app_name)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///skillhub/skillhub.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hilmt/hilmt.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json_encoder = DictTree.JSONEncoder
 db = sql.SQLAlchemy(app)
