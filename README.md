@@ -1,19 +1,19 @@
-# Multi-Task Hierarchical Imitation Learning of Robot Skills
+# Multi-Task Hierarchical Imitation Learning for Home Automation
 
-Code for running the *SkillHub* server, generating annotated demonstrations, learning hierarchical controllers, and rolloing learned controllers on an HSR robot.
+Code for running the *HIL-MT* server, generating annotated demonstrations, learning hierarchical controllers, and rolloing learned controllers on an HSR robot.
 
 ## Installation
 
 In addition to the dependencies in [requirements.txt](requirements.txt), the [`HSREnv`](envs/hsr.py#L202) depends on [pyyolo](https://github.com/digitalbrain79/pyyolo).
 Please follow [these instructions](https://github.com/digitalbrain79/pyyolo#building) to install pyyolo, and then change the paths in [vision.py](envs/vision.py) to your installation path.
 
-## Running SkillHub
+## Running HIL-MT
 
-To run the SkillHub server:
+To run the HIL-MT server:
 
-`python skillhub/server.py`
+`python hilmt/server.py`
 
-To run the server in debug mode, set the `DEBUG` flag to `True` in [server.py](skillhub/server.py#L21).
+To run the server in debug mode, set the `DEBUG` flag to `True` in [server.py](hilmt/server.py#L21).
 
 ## Providing demonstrations
 
